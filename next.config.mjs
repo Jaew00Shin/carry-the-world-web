@@ -9,6 +9,15 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  async redirects() {
+    return [
+      {
+        source: '/app-ads.txt',
+        destination: 'https://daro.so/app-ads.txt',
+        permanent: true,
+      },
+    ];
+  },
 }
 
 export default nextConfig
